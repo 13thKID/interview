@@ -1,0 +1,21 @@
+{
+  "name": "grid-layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss:compile": "node-sass ./index.scss ./style.css",
+    "scss:watch": "node-sass --watch ./index.scss ./style.css",
+    "serve": "live-server --port=3000 --entry-file=./index.html",
+    "dev": "concurrently \"npm run scss:watch\" \"npm run serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "live-server": "^1.2.2",
+    "node-sass": "^9.0.0"
+  }
+}

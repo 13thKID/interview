@@ -1,0 +1,7 @@
+.main {
+  display: grid; }
+
+.box {
+  background-color: #ddd;
+  color: #000;
+  font-size: 40px; }
