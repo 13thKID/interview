@@ -3,6 +3,11 @@
  * INSTRUCTIONS
  * -----------------------------------
  * 
+ * You shall implement the functions below and consequently write some tests for one
+ * of them
+ * 
+ * >>> Available NPM scripts <<<
+ * 
  * START: npm run start
  * START TYPESCRIPT: npm run start:ts
  * SERVE: npm run serve
@@ -28,8 +33,7 @@ export function sumAll() {
 
 const sumAllResult = sumAll()
 
-console.log(sumAllResult)
-
+console.log('sumAllResult: ', sumAllResult)
 /**
  * >>> OPTION 2 <<<
  * 
@@ -39,12 +43,18 @@ console.log(sumAllResult)
  * @param arr eg. [1, 2, 3]
  * @returns [1, 2, 3, 2, 1]
  * @example [a, b, c, d, e] => [a, b, c, d, e, d, c, b, a]
+ * 3. this function should NOT mutate the passed array
  */
 
-export function upAndDown() {
-    return 0
+const myArray = []
+
+export function upAndDown(arr) {
+    return arr
 }
 
-const upAndDownResult = upAndDown()
+const upAndDownResult = upAndDown(myArray)
 
-console.log(upAndDownResult)
+console.log('upAndDownResult: ', upAndDownResult)
+
+/** Make sure, the initial array is untouched */
+console.log('myArray: ', myArray)

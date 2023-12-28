@@ -8,6 +8,6 @@ describe('sumAll', () => {
 
 describe('upAndDown', () => {
     it('works', () => {
-        expect(upAndDown()).toEqual(0)
+        expect(upAndDown([])).toEqual([])
     })
 })
